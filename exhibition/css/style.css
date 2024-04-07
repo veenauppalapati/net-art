@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+    color: white;
+}
+.left {
+    width:48%;
+    float:left;
+
+  }
+  
+  .right {
+    width:48%;
+    float:right;
+    
+  }
+  
+  img {
+    width:100%;
+  }
+
+  .easeload{
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+   
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.typed-out{   
+    font-size: 1.6rem;
+    text-align: justify;
+    padding: 20px
+     
+}
+
+.art-work-title{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+  @media screen and (max-width: 992px) {
+    .left {
+      width:80%;
+      float:none;
+      margin:0 auto;
+      text-align:center;
+      padding:0px;
+    }
+    .right {
+      width:80%;
+      text-align:center;
+      float:none;
+      margin:0 auto;
+      overflow-y:hidden;
+      overflow-x:hidden;
+      height:auto;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .left {
+      width:100%;
+    }
+    .right {
+      width:100%;
+    }
+  }
