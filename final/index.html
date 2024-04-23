@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quilt</title>
+  <link rel="stylesheet" href="./css/style.css"></style>
+  <script src="./js/cell.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+  <div class = "game-board">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box" id="netflix-cell"></div>
+    <div class="box" id ="studying-cell"></div>
+    <div class="box" id="center-cell"><img src="./img/plan.gif"><br></div>
+    <div class="box" id="workout-cell"></div>
+    <div class="box" id="food-cell"></div>
+    <div class="box"></div>
+    <div class="box" id="smoothie-cell"></div>
+  </div>
+  <div class = "hypertext">
+    <div id="workout-text" style="display: block;">
+      <h3>
+        Should I <a href="#" onclick="workout()">workout</a>? OR<br>
+        Should I just take the day off and focus on <a href="#" onclick="schoolwork()">school-work</a>?<br>
+      </h3>
+    </div>
+    
+    <div id="smoothie-text" style="display: none;">
+      <h1  onclick="smoothie()" >
+        I earned a smoothie! 
+      </h1>
+    </div>
+
+    <div id="studying-text" style="display: none;">
+      <h3>
+        <em>
+            I should have gone to the gym. <br>
+            How did I expect to focus without the right mindset and energy? <br>
+
+            So, what can I do to keep myself awake?  <br>
+            I got an IDEA! <br>
+            <h1>MORE <a href="#" onclick="food()">FOOD</a> &nbsp;??? </h1><br>
+            <h1>OR</h1>
+            <h1><a href="#" onclick="netflix()">Netflix??</a></h1>
+
+        </em>       
+      </h3>
+    </div>
+
+    <div id="food-text" style="display: none">
+      <h3>
+        <em>
+            <h1>After a BIG meal! ... </h1>
+            Let me put <a href="./netflix.html"><strong>Netflix</strong></a> on while having my meal to relax myself a bit. <br><br>          
+        </em>
+    </h3>
+    </div>
+
+    
+  </div>
+  
+   
+</body>
+</html>

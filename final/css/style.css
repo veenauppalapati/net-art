@@ -1,0 +1,44 @@
+
+* { 
+    margin: 0; 
+    padding: 0; 
+  }
+  body{
+    background-color: rgb(229, 227, 227);
+  }
+
+  .game-board{ 
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px 20px;
+    justify-content: center;
+   }
+
+   .box {
+    background-color: #d9d9d9;
+    border: 2px solid black;
+   }
+
+   #center-cell{
+    background-color: green;
+    text-align: center;
+    vertical-align: middle;
+  
+   }
+
+   img{
+    width:120px;
+    height: 120px;
+    object-fit: fill;
+   }
+
+   .hypertext{
+    width: 800px;
+    height: 400px;
+    align-content: center;
+    text-align: center;
+    margin:auto;
+
+   }
+
+
