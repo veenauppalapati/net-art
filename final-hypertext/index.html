@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quilt</title>
+  <link rel="stylesheet" href="./css/style.css"></style>
+  <script src="./js/cell.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+  <div class = "game-board">
+    <div class="box top left" id="email-cell"></div>
+    <div class="box top" id="bed-cell"></div>
+    <div class="box top right" id="netflix-cell"></div>
+    <div class="box middle left" id ="studying-cell"></div>
+    <div class="box middle" id="center-cell"><img src="./img/plan.gif"><br></div>
+    <div class="box middle right" id="workout-cell"></div>
+    <div class="box bottom left" id="food-cell"></div>
+    <div class="box bottom" id="morning-cell"></div>
+    <div class="box bottom right" id="smoothie-cell"></div>
+  </div>
+  <div class = "hypertext">
+    <div id="morning-text" style="display: block;">
+      <h3>
+        Should I <a href="#" onclick="workout()">workout</a>? OR<br>
+        Should I just take the day off and focus on <a href="#" onclick="schoolwork()">school-work</a>?<br>
+      </h3>
+    </div>
+    
+    <div id="smoothie-text" style="display: none;">
+      <h1>
+        I earned a smoothie! <br>
+        Let me check my <a href="#" onclick="email()">email</a> while I enjoy this smoothie!
+
+      </h1>
+    </div>
+
+    <div id="studying-text" style="display: none;">
+      <h3>
+        <em>
+            I should have gone to the gym. <br>
+            How did I expect to focus without the right mindset and energy? <br>
+
+            So, what can I do to keep myself awake?  <br>
+            I got an IDEA! <br><br>
+            <h1>MORE <a href="#" onclick="food()">FOOD</a> &nbsp;??? </h1><br>
+            <h1>OR</h1>
+            <h1><a href="#" onclick="netflix()">Netflix??</a></h1>
+
+        </em>       
+      </h3>
+    </div>
+
+    <div id="food-text" style="display: none">
+      <h3>
+        <em>
+            <h1>After a BIG meal! ... </h1>
+            Let me put <a href="#" onclick="netflix()"><strong>Netflix</strong></a> on while having my meal to relax myself a bit. <br><br>          
+        </em>
+    </h3>
+    </div>
+
+    <div id="netflix-text" style="display: none">
+      <h3>
+        <em>     
+            <h2>After couple of hours of binge watching...</h2><br>
+            
+            Why do I feel so lethargic? <br>
+            I will atleast clean up my <a href="#" onclick="email()">email</a> and be somewhat productive. <br>    
+        </em>
+    </h3>
+
+    </div>
+
+   <div id="email-text" style="display: none">
+    <h3>
+      <em>
+          OMG if i miss out on this offer I would be paying more.  Let me go to their website and 
+          <h1>Buy!!</h1><br>
+
+          <h2>After a moment of bliss...</h2> <br>
+
+          I think I am done for today. I will work on my assignments tomorrow.  I am just going to hop in <a href="#" onclick="night()">bed</a> and call it a day tonight.   
+      </em>
+    </h3>
+   </div> 
+
+  <div id="bed-text"  style="display: none">
+    <h3>
+      <em> 
+          Why do I feel so down and depressed?  <br>
+          I don’t know what I am going to do with my life. <br> 
+          I have no focus. <br>
+          I am going to start all fresh in the <a href="#" onclick="morning()">morning</a>.    
+      </em>
+    </h3>
+  </div>
+
+
+  </div>
+  </div>
+  
+   
+</body>
+</html>
